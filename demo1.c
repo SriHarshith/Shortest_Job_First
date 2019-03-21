@@ -35,16 +35,10 @@ int main()
 	printf("\n count of burst time array %d",j);  
     limit=j;
 	printf("\nNumber of processes %d\n",limit); 
-	
-    
-//      printf("\nEnter the Total Number of Processes:\t");
-//      scanf("%d", &limit); 
-//      printf("\nEnter Details of %d Processes\n", limit);
+
       for(i = 0; i < limit; i++)
       {
-            //printf("\nEnter Arrival Time:\t");
-            //scanf("%d", &burst_time[i]); 
-            temp[i] = burst_time[i];
+            temp[i] = burst_time[i]; //copy burst_time to temp array
       }
       
       burst_time[9] = 9999;  		 //assigning a large value to last element of array 
